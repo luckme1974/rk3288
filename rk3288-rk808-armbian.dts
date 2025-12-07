@@ -530,7 +530,7 @@
 					type = "critical";
 				};
 			};
-
+		
 			cooling-maps {
 
 				map0 {
@@ -1424,13 +1424,13 @@
 		reg = <0x00 0xff980000 0x00 0x20000>;
 		reg-io-width = <0x04>;
 		#sound-dai-cells = <0x00>;
-		rockchip,grf = <0x35>;
+		rockchip,grf = <0x38>;
 		interrupts = <0x00 0x67 0x04>;
 		clocks = <0x07 0x168 0x07 0x6d 0x07 0x6e>;
 		clock-names = "iahb", "isfr", "cec";
 		power-domains = <0x5a 0x09>;
 		status = "okay";
-		ddc-i2c-bus = <0x6e>;
+		ddc-i2c-bus = <0x70>;
 
 		ports {
 
@@ -1440,8 +1440,9 @@
 
 				endpoint@0 {
 					reg = <0x00>;
-					remote-endpoint = <0x6f>;
+					remote-endpoint = <0x71>;
 					phandle = <0x5d>;
+				};
 				};
 			};
 		};
